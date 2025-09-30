@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scroll-behavior",
+          "scroll-behavior: auto",
+          "backdrop-filter",
+          "scrollbar-color",
+          "position: sticky"
+        ]
+      }
+    ]
+  }
+}
