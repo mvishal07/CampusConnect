@@ -34,7 +34,7 @@ function NewPost() {
         }
 
         try {
-            const api = "http://localhost:5000/api/posts/"
+            const api = "https://campusconnect-vp4m.onrender.com/api/posts/"
             const response = await fetch(api, {
                 method: 'POST',
                 headers: {

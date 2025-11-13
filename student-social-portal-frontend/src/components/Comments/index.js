@@ -14,7 +14,7 @@ function Comments({ isCommentOpen, onClose, user, id, token }) {
     const fetchComments = async () => {
       try {
         setLoading(true)
-        const api = `http://localhost:5000/api/posts/${id}`;
+        const api = `https://campusconnect-vp4m.onrender.com/api/posts/${id}`;
         const response = await fetch(api, {
           method: "GET",
           headers: {
@@ -38,7 +38,7 @@ function Comments({ isCommentOpen, onClose, user, id, token }) {
   const onComment = async () => {
 
     try {
-      const api = `http://localhost:5000/api/posts/${id}/comment`;
+      const api = `https://campusconnect-vp4m.onrender.com/api/posts/${id}/comment`;
       setLoading(true)
       const response = await fetch(api, {
         method: "PUT",

@@ -20,7 +20,7 @@ function ProfilePopup({ isOpen, onClose, user }) {
         let id = user._id
         const getProfilePosts = async () => {
             
-            const api = `http://localhost:5000/api/posts/${id}/profile`
+            const api = `https://campusconnect-vp4m.onrender.com/api/posts/${id}/profile`
 
             const response = await fetch(api, {
                 method: 'GET',

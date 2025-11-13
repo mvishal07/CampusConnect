@@ -21,7 +21,7 @@ function Profile() {
         const getProfilePosts = async () => {
             let id = user._id
             setLoading(true)
-            const api = `http://localhost:5000/api/posts/${id}/profile`
+            const api = `https://campusconnect-vp4m.onrender.com/api/posts/${id}/profile`
 
             const response = await fetch(api, {
                 method: 'GET',
@@ -44,7 +44,7 @@ function Profile() {
 
 
     const deletePost = async (id) => {
-        const api = `http://localhost:5000/api/posts/${id}`
+        const api = `https://campusconnect-vp4m.onrender.com/api/posts/${id}`
 
         const response = await fetch(api, {
             method: 'DELETE',

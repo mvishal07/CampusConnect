@@ -15,7 +15,7 @@ function PostEdit({ isOpen, onClose, id, caption, image, token ,onUpdate}) {
   const handleSave = async () => {
     try {
       setLoading(true);
-      const api = `http://localhost:5000/api/posts/update/${id}`;
+      const api = `https://campusconnect-vp4m.onrender.com/api/posts/update/${id}`;
       const response = await fetch(api, {
         method: "PUT",
         headers: {

@@ -28,7 +28,7 @@ function LoginPage() {
 
         try {
 
-            const url = "http://localhost:5000/api/auth/login";
+            const url = "https://campusconnect-vp4m.onrender.com/api/auth/login";
             setLoading(true)
             const options = {
                 method: 'POST',

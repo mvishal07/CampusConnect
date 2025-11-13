@@ -33,7 +33,7 @@ function SignupPage() {
         }
 
         try {
-            const api = 'http://localhost:5000/api/auth/sign'
+            const api = 'https://campusconnect-vp4m.onrender.com/api/auth/sign'
             setLoading(true)
             const response = await fetch(api, {
                 method: 'POST',
