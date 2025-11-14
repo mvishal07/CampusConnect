@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/auth",authRoutes);
 app.use("/api/posts",postsRoutes)
-
+app.use(express.urlencoded({ extended: true }));
 app.use((req, res) => {
   res.status(404).json({
     status: "failure",
